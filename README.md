@@ -2,7 +2,7 @@
 
 Code accompanying the manuscript *Physics-Informed Active Learning for High-Performance Direct Air Capture Sorbents*.
 
-The framework predicts CO₂ adsorption curves with a teacher-anchored neural surrogate and selects the next experiments from a candidate list. Measurement data are not included.
+The framework predicts CO₂ adsorption curves with a teacher-anchored neural surrogate and selects the next experiments from a candidate list. Apart from the raw IR spectra in `ftir/`, measurement data are not included.
 
 | File | Purpose |
 | --- | --- |
@@ -10,6 +10,7 @@ The framework predicts CO₂ adsorption curves with a teacher-anchored neural su
 | `model.py` | Fit kinetic teachers, train models and load checkpoints |
 | `validation.py` | Evaluate held-out formulations and baseline models |
 | `campaign.py` | Propose experiments and analyse completed rounds |
+| `ftir/` | Raw synchrotron IR spectra (Bruker OPUS): `co2_25C/` CO₂ at 25 °C, `n2_110C/` N₂ at 110 °C |
 
 ## Install
 
